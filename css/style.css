@@ -95,33 +95,33 @@ header {
 
 nav {
   float: right;
-  padding: 30px;
+  padding: 5px 30px;
 }
 
 nav ul li {
   display: inline-block;
   padding: 18px;
-  font-size: 20px;
+  font-size: 1.25em;
   font-family: "Alata", sans-serif;
-  color: #b6be24;
+  color: #F8D697;
 }
 
 h1 {
   font-family: "Alata", sans-serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2.5em;
   text-align: center;
 }
 
 .greeting {
-  width: 700px;
+  max-width: 700px;
   margin-right: 30px;
   float: inherit;
   padding: 40px;
 }
 
-.jessica-picture {
-  width: 400px;
+.jessica_picture {
+  max-width: 400px;
   float: inherit;
   border: 10px solid white;
 }
@@ -131,24 +131,32 @@ h1 {
   padding-left: 70px;
   padding-right: 70px;
   text-align: center;
-  color: #b6be24;
+  color: #F8D697;
+}
+
+header #about_me_1 {
+  font-size: 1.25em;
+}
+
+header #about_me_2 {
+  font-size: 1.25em;
 }
 
 h2 {
   font-family: "Alata", sans-serif;
   font-weight: 25;
-  font-size: 25px;
+  font-size: 2.19em;
   float: inherit;
 }
 
 h3 {
   font-family: "Alata", sans-serif;
-  font-size: 25px;
+  font-size: 2.19em;
   font-weight: 25;
 }
 
 .project_title {
-  padding: 30px;
+  padding: 10px 30px;
   justify-content: center;
   align-items: center;
   display:flex;
@@ -166,6 +174,7 @@ h3 {
   height: auto;
   overflow: auto;
   box-sizing: border-box;
+  font-family: "Alata", sans-serif;
 }
 
 .solo_project {
@@ -177,20 +186,126 @@ h3 {
   display: table-cell;
 }
 
+.live {
+  font-size: 1em;
+  padding: .75em 1em;
+  border-radius: 20px;
+  background: #F8D697;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+.live:hover {
+  background: #c48611;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
 .img {
-  width: 500px;
+  max-width: 500px;
   height: auto;
+}
+
+.skills_title {
+  background-color: #351D77;
+  color: white;
+  clear: both;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  display:flex;
 }
 
 .skills {
   background-color: #351D77;
   color: white;
-  clear: both;
+  justify-content: center;
+  align-items: center;
+  font-family: "Alata", sans-serif;
+  display:flex;
+  flex-wrap: wrap;
+  float: left;
+  padding-bottom: 50px;
 }
 
-.contact {
-  background: #E8F0E4;
+.button {
+  background-color: #F8D697;
+  color: black;
+  font-size: 1.06em;
+  padding: 18px;
+  margin: 10px;
+  width: 150px;
+  text-align: center;
 }
+
+.contact_area {
+  background: #E8F0E4;
+  justify-content: center;
+  align-items: center;
+  font-family: "Alata", sans-serif;
+  font-size: 1.25em;
+  text-align: center;
+  line-height: 30px;
+}
+
+.contact_info {
+  float:right;
+  padding: 120px 300px 100px 200px;
+  font-size: 1em;
+  line-height: 40px;
+}
+
+.contact_image {
+  max-width: 400px;
+  border: 10px solid black;
+  margin: 50px 0px 50px 100px;
+  display:inline;
+}
+
+footer #contact_title {
+  clear: both;
+  align-items: center;
+  padding-top: 30px;
+  font-size: 2.19em;
+  font-weight: 25;
+}
+
+footer #envelope {
+  padding-right: 20px;
+  height: 20px;
+}
+
+footer #l_icon {
+  padding-right: 20px;
+  height: 25px;
+}
+
+footer #g_icon {
+  padding-right: 20px;
+  height: 25px;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -274,16 +389,40 @@ h3 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+/*@media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
+/*@media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
+
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+  .header_top {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  .jessica_picture {
+    text-align: center; 
+    justify-content: center;
+    display: inline-block;
+    padding-left: 5em;
+  }
+  .greeting {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  /*phone styles here*/
+}
+
 
 /* ==========================================================================
    Print styles.
