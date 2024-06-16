@@ -83,7 +83,114 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+header {
+  background-color: #351D77;
+  color: white;
+  float:left;
+}
 
+.header-top {
+  float:left;
+}
+
+nav {
+  float: right;
+  padding: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 18px;
+  font-size: 20px;
+  font-family: "Alata", sans-serif;
+  color: #b6be24;
+}
+
+h1 {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+}
+
+.greeting {
+  width: 700px;
+  margin-right: 30px;
+  float: inherit;
+  padding: 40px;
+}
+
+.jessica-picture {
+  width: 400px;
+  float: inherit;
+  border: 10px solid white;
+}
+
+.header-bottom {
+  float:left;
+  padding-left: 70px;
+  padding-right: 70px;
+  text-align: center;
+  color: #b6be24;
+}
+
+h2 {
+  font-family: "Alata", sans-serif;
+  font-weight: 25;
+  font-size: 25px;
+  float: inherit;
+}
+
+h3 {
+  font-family: "Alata", sans-serif;
+  font-size: 25px;
+  font-weight: 25;
+}
+
+.project_title {
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  background: #E8F0E4;
+}
+
+.projects {
+  background: #E8F0E4;
+  text-align: center;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  display: table;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.solo_project {
+  width: 43%;
+  height: 100%;
+  float: inherit;
+  padding: 40px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.img {
+  width: 500px;
+  height: auto;
+}
+
+.skills {
+  background-color: #351D77;
+  color: white;
+  clear: both;
+}
+
+.contact {
+  background: #E8F0E4;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
