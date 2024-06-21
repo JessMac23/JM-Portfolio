@@ -86,21 +86,35 @@ textarea {
 header {
   background-color: #351D77;
   color: white;
-  float:left;
+  display:flex;
+  flex-flow:row wrap;
+  width: 100%;
 }
 
 .header-top {
-  float:left;
+  display:flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  align-content: center;
 }
 
 nav {
-  float: right;
-  padding: 5px 30px;
+  width: 100%;
+} 
+
+nav ul {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
 }
 
 nav ul li {
-  display: inline-block;
-  padding: 18px;
+  display: inline;
+  text-align: center;
+  align-content: space-evenly;
+  gap: column;
   font-size: 1.25em;
   font-family: "Alata", sans-serif;
   color: #F8D697;
@@ -121,9 +135,10 @@ h1 {
 }
 
 .jessica_picture {
+  width: 80%;
   max-width: 400px;
-  float: inherit;
   border: 10px solid white;
+  flex-basis: auto;
 }
 
 .header-bottom {
@@ -165,25 +180,25 @@ h3 {
 
 .projects {
   background: #E8F0E4;
-  text-align: center;
-  float: left;
+  width: 100%;
+  font-family: "Alata", sans-serif;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: table;
-  width: 100%;
-  height: auto;
-  overflow: auto;
-  box-sizing: border-box;
-  font-family: "Alata", sans-serif;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-bottom: 50px;
 }
 
 .solo_project {
-  width: 43%;
-  height: 100%;
-  float: inherit;
-  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
   vertical-align: middle;
   display: table-cell;
+  flex-basis: auto;
+  text-align: center;
 }
 
 .live {
@@ -191,6 +206,7 @@ h3 {
   padding: .75em 1em;
   border-radius: 20px;
   background: #F8D697;
+  align-self: auto;
 }
 
 a {
@@ -220,6 +236,9 @@ a:visited {
 .img {
   max-width: 500px;
   height: auto;
+  flex-basis: auto;
+  width: 80%;
+  border: 5px solid black;
 }
 
 .skills_title {
@@ -254,28 +273,35 @@ a:visited {
   text-align: center;
 }
 
-.contact_area {
+footer {
   background: #E8F0E4;
   justify-content: center;
-  align-items: center;
-  font-family: "Alata", sans-serif;
+  flex-wrap: wrap;
+}
+
+.contact_area {
   font-size: 1.25em;
-  text-align: center;
   line-height: 30px;
+  font-family: "Alata", sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row-wrap;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 .contact_info {
-  float:right;
-  padding: 120px 300px 100px 200px;
   font-size: 1em;
   line-height: 40px;
+  background: #E8F0E4;
+  text-align: center;
 }
 
 .contact_image {
   max-width: 400px;
+  width: 80%;
   border: 10px solid black;
-  margin: 50px 0px 50px 100px;
-  display:inline;
+  flex-basis: auto; 
 }
 
 footer #contact_title {
@@ -427,10 +453,32 @@ footer ul {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
 
-@media only screen and (max-width: 768px) {
-  /*phone styles here*/
+.jessica_picture {
+  float:right;
 }
+
+.projects {
+  flex-wrap: wrap;
+}
+
+.solo_project {
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+.contact_info {
+  display: inline-flex; 
+  text-align: center;
+  margin-left: 80px;
+}
+
+}
+
+
+
 
 
 /* ==========================================================================
