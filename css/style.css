@@ -216,17 +216,18 @@ h3 {
 
 .live {
   font-size: 1em;
-  padding: .75em 1em;
+  padding: .75em 2em;
   border-radius: 40px;
   border-width: 5px;
   background: #F8D697;
   align-self: auto;
+  display: inline-block;
 }
 
 a {
   text-decoration: none;
   color: #351D77;
-  font-weight: 1000;
+  font-weight: 800;
   /*text-shadow:
     -1px -1px 0 white,
     1px -1px 0 white,
