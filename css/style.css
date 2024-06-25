@@ -93,7 +93,7 @@ body {
   margin: 0;
 }
 
-   header {
+header {
   background-color: #351D77;
   color: white;
   display:flex;
@@ -156,7 +156,7 @@ h1 {
   float:left;
   padding-left: 70px;
   padding-right: 70px;
-  text-align: center;
+  text-align: left;
   color: #F8D697;
   width: 70%;
   padding: 40px 30px;
@@ -228,26 +228,17 @@ a {
   text-decoration: none;
   color: #351D77;
   font-weight: 800;
-  /*text-shadow:
+  letter-spacing: 2px;
+  text-shadow:
     -1px -1px 0 white,
     1px -1px 0 white,
     -1px 1px 0 white,
-    1px 1px 0 white; */
+    1px 1px 0 white; 
 }
 
 .live:hover {
   background: #c48611;
 }
-
-/*a:visited {
-  text-decoration: none;
-  color: white;
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000; 
-}*/
 
 .img {
   max-width: 500px;
