@@ -17,6 +17,12 @@ html {
   line-height: 1.4;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+      scroll-behavior: smooth;  
+  }
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -88,6 +94,7 @@ header {
   color: white;
   display:flex;
   flex-flow:row wrap;
+  justify-content: center;
   width: 100%;
 }
 
@@ -123,7 +130,7 @@ nav ul li {
 h1 {
   font-family: "Alata", sans-serif;
   font-weight: 400;
-  font-size: 2.5em;
+  font-size: 1.5em;
   text-align: center;
 }
 
@@ -147,6 +154,8 @@ h1 {
   padding-right: 70px;
   text-align: center;
   color: #F8D697;
+  width: 70%;
+  padding: 40px 30px;
 }
 
 header #about_me_1 {
@@ -431,23 +440,32 @@ footer ul {
   .header_top {
     text-align: center;
   }
+
   .jessica_picture {
     text-align: center;
   }
+
+  h1 {
+    font-size: 2.0em;
+  }
+
   .greeting {
     width: 100%;
     margin: 0 auto;
   }
+
   .solo_project {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .contact_area {
     text-align: center;
     display: flex;
   }
+
   .contact_info {
     min-height: 4em;
   }
@@ -458,6 +476,10 @@ footer ul {
 
 .jessica_picture {
   float:right;
+}
+
+.greeting {
+  font-size: 2.5em;
 }
 
 .projects {
