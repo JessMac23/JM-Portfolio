@@ -125,10 +125,14 @@ nav ul li {
   display: inline;
   text-align: center;
   align-content: space-evenly;
-  gap: column;
   font-size: 1.25em;
   font-family: "Alata", sans-serif;
+  /*color: #F8D697;*/
+}
+
+#nav-color a {
   color: #F8D697;
+  text-shadow: none;
 }
 
 h1 {
@@ -292,7 +296,6 @@ footer {
   font-family: "Alata", sans-serif;
   justify-content: center;
   align-items: center;
-  flex-flow: row-wrap;
   text-align: center;
   padding-bottom: 40px;
 }
